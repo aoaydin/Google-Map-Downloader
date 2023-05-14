@@ -1,30 +1,60 @@
-This program is a script that downloads a high-resolution image of a Google Maps view when given a specific latitude, longitude, zoom level, map layer, and image file name.
+# Google Map Downloader
 
-The program retrieves the appropriate map document from Google Maps' data server based on the provided latitude (lat), longitude (lng), zoom level (zoom), and map layer (layer) information. It then stitches the downloaded document to create a high-resolution image and saves it with the specified image file name.
+This script is a Python program that allows you to download high-resolution Google Maps images by providing the latitude, longitude, zoom level, map layer, and image filename. It utilizes the `PIL` library for image processing and the `requests` library for making HTTP requests.
 
-To use the program, you can follow the steps below:
+## Usage
 
-When you run the program, you will be prompted to enter the latitude, longitude, zoom level, map layer (e.g., using the letter 'r' to represent a modified road map), and image file name (e.g., high_resolution_image.png).
+1. Run the script.
+2. Enter the latitude, longitude, zoom level (0-23), map layer, and image filename when prompted.
+3. The script will generate a high-resolution Google Map image and save it as the specified filename.
 
-After entering the necessary information, the program will download a high-resolution image from Google Maps based on the provided latitude, longitude, and zoom level. The download process may take some time.
+## Requirements
 
-Once the download is complete, the generated image will be saved with the specified image file name.
+- Python 3.x
+- `PIL` library
+- `requests` library
 
-This program can be useful when you specifically need to download a high-resolution Google Maps image of a particular area. For example, you may require a detailed map view of a specific region for use in a project presentation or report.
+## Usage Example
+
+$ python GoogleMapDownloader.py
+Enter latitude: [Enter the latitude here]
+Enter longitude: [Enter the longitude here]
+Enter zoom level (0-23): [Enter the zoom level here]
+Enter map layer (e.g., 'r' for altered roadmap): [Enter the map layer here]
+Enter image filename (e.g., high_resolution_image): [Enter the image filename here]
+
+## Tags
+
+- Google Maps
+- Python
+- Image Processing
+- HTTP Requests
 
 _________________________________________________________________________________________________________________________________________________
 
 
-Bu program, belirli bir enlem, boylam, yakınlaştırma düzeyi, harita katmanı ve görüntü dosya adı verildiğinde yüksek çözünürlüklü bir Google Haritalar görüntüsü indiren bir betiktir.
+# Google Map Downloader
 
-Program, verilen enlem (lat), boylam (lng), yakınlaştırma düzeyi (zoom) ve harita katmanı (layer) bilgilerine göre Google Haritalar'ın veri sunucusundan uygun harita dökümanını indirir. Ardından, indirilen dökümanı dikişleyerek yüksek çözünürlüklü bir görüntü oluşturur ve belirtilen görüntü dosya adıyla kaydeder.
+Bu program, en yüksek çözünürlükte Google Haritalar görüntülerini indirmenizi sağlayan bir Python scriptidir. Enlem, boylam, zoom seviyesi, harita katmanı ve görüntü dosya adını sağlayarak çalışır. Görüntü işleme için `PIL` kütüphanesini ve HTTP istekleri için `requests` kütüphanesini kullanır.
 
-Programın kullanımı için aşağıdaki adımları izleyebilirsiniz:
+## Kullanım
 
-Programı çalıştırdığınızda, enlem (latitude), boylam (longitude), yakınlaştırma düzeyi (zoom), harita katmanı (örneğin 'r' harfini kullanarak değiştirilmiş yol haritası) ve görüntü dosya adı (örneğin high_resolution_image.png) girmeniz istenecektir.
+1. Script'i çalıştırın.
+2. İstenilen enlem, boylam, zoom seviyesi (0-23), harita katmanı ve görüntü dosya adını girin.
+3. Script, yüksek çözünürlükte bir Google Haritası görüntüsü oluşturacak ve belirtilen dosya adıyla kaydedecektir.
 
-Gerekli bilgileri girdikten sonra, program girilen enlem, boylam ve yakınlaştırma düzeyine göre Google Haritalar'dan yüksek çözünürlüklü bir görüntü indirecektir. İndirme işlemi bir sürebilir.
+## Gereksinimler
 
-İndirme işlemi tamamlandığında, oluşturulan görüntü belirtilen görüntü dosya adıyla kaydedilecektir.
+- Python 3.x
+- `PIL` kütüphanesi
+- `requests` kütüphanesi
 
-Bu program, özellikle belirli bir bölgenin Google Haritalar görüntüsünü yüksek çözünürlükte indirmek istediğiniz durumlarda kullanışlı olabilir. Örneğin, bir proje sunumunda veya raporunda kullanmak üzere belli bir bölgenin detaylı bir harita görüntüsüne ihtiyaç duyabilirsiniz.
+## Kullanım Örneği
+
+$ python GoogleMapDownloader.py
+Enter latitude: [Enlemi buraya girin]
+Enter longitude: [Boylamı buraya girin]
+Enter zoom level (0-23): [Zoom seviyesini buraya girin]
+Enter map layer (e.g., 'r' for altered roadmap): [Harita katmanını buraya girin]
+Enter image filename (e.g., high_resolution_image): [Görüntü dosya adını buraya girin]
+
